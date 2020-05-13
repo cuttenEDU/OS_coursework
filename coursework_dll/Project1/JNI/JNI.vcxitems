@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{5a719255-8608-4b3c-90a1-f7ae34b321b0}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)AccessBridgeCallbacks.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AccessBridgeCalls.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AccessBridgePackages.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)classfile_constants.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)jawt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)jawt_md.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)jdwpTransport.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)jni.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)jni_md.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)jvmti.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)jvmticmlr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)AccessBridgeCalls.c" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+*.sln
+*.user
+.vs/*
+*/.vs/*
+*/debug/*
+*/release/*
+*/x64/*
+*/Win32/*
+*/*/debug/*
+*/*/release/*
+*/*/x64/*
+*/*/Win32/*
+*.filters
+*.vcxproj
+*.bat
+*/out/*
